@@ -340,8 +340,8 @@ This module allows you to do that easily, by exposing some common actions, so ev
 -/push: <userhandle>: Punches a user out of the group, (via handle, or reply) 
 
 Examples:
-- Mute a user for two hours.
--> /tmute @username 2h
+- Mute a user for one hours.
+-> /tmute @username 1h
 """
 
 BAN_HANDLER = CommandHandler("ban", ban, pass_args=True)
