@@ -8,7 +8,7 @@
 </p>
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sadew451/HectorBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SenuGamerBoy/Anim-Manager)
 
 
 ## 🔮My Updates Channel [Senu Infinity](https://t.me/senuinfinity)
