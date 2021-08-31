@@ -357,10 +357,16 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
+This is the help section for admins of a group.⚙️
+If you have added me to your group then you can use this commands in your group.👥
+You can do it only if you are an admin of the group.⭐️ That's why they are called as ADMIN commands😁
+
+Here is the commands for the ADMINS:
+
  - /adminlist: list of admins in the chat
 
-*Admin only:*
- - /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
+Admin only:
+ - /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifies to users.
  - /unpin: unpins the currently pinned message
  - /invitelink: gets invitelink
  - /promote: promotes the user replied to
@@ -369,8 +375,6 @@ __help__ = """
  - /settitle: Sets a custom title for an admin which is promoted by bot.
  - /setgpic: As a reply to file or photo to set group profile pic!
  - /delgpic: Same as above but to remove group profile pic.
-
-"""
 
 
 PIN_HANDLER = CommandHandler("pin", pin, pass_args=True, filters=Filters.group)
