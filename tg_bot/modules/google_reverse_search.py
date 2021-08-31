@@ -182,6 +182,8 @@ def scam(imgspage, lim):
 
 
 __help__ = """
+Think if you have a image and you want to search similar images.🖼 So you can this feature of the bot.🤗 It uploads your image to google and search similar images.🔎 If it can't find similar images it gives the link for a page which have visually similar images.🔗
+
 - /reverse: Does a reverse image search of the media which it was replied to.
 """
 
