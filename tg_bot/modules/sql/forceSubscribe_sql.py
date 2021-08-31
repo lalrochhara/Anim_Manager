@@ -16,7 +16,7 @@
 
 from sqlalchemy import Column, Numeric, String
 
-from EzilaXBotV.modules.sql import BASE, SESSION
+from tg_bot.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):
