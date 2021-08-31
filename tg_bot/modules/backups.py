@@ -66,10 +66,11 @@ def export_data(bot: Bot, update: Update):
 
 
 __help__ = """
-*Admin only:*
- - /import: reply to a group butler backup file to import as much as possible, making the transfer super simple! Note \
-that files/photos can't be imported due to telegram restrictions.
- - /export: !!! This isn't a command yet, but should be coming soon!
+Only for group owner and admin:
+
+ ❍ /import: Reply to the backup file for the butler / emilia group to import as much as possible, making transfers very easy!  Note that files / photos cannot be imported due to telegram restrictions.
+
+ ❍ /export: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons)
 """
 
 IMPORT_HANDLER = CommandHandler("import", import_data)
