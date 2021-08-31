@@ -40,6 +40,7 @@ def covid(bot: Bot, update: Update):
 
 
 __help__ = """
+ If you want to get the Global Covid 19 status🌍, then this is a command for you.😘 You can type this command and get worldwide Covid 19 status and BOOM!💣
  
  - /covid get worldwide corona status
 """
