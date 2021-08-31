@@ -7,11 +7,9 @@
   <a href="https://github.com/SenuGamerBoy/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" /> </a>
 </p>
 
-
-#this is main brach. swith advaced fr all fetures
-
+<center>
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sadew451/HectorBot)
-
+</center>
 
 
 ## 🔮My Updates Channel [Senu Infinity](https://t.me/senuinfinity)
