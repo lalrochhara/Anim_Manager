@@ -42,6 +42,8 @@ def convert(bot: Bot, update: Update):
 
 
 __help__ = """
+🔄If you want to turn one country's currency in to another, then that is the place where Currency Converter takes place.💵 For example if you send "/cash 1 USD INR" you will get the reply from the bot as "1.0 USD = 72.926 INR".🔆 You can turn any currency in to another using this command.✨
+
  - /cash : currency converter
  example syntax: /cash 1 USD INR
 """
