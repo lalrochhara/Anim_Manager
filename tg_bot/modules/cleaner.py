@@ -197,6 +197,9 @@ def bluetext_ignore_list(bot: Bot, update: Update):
 
 
 __help__ = """
+Sometimes users send commands to the bots added in your group an ruin your chat.😖
+You can use this to delete those commands.🤩
+
  - /cleanblue <on/off/yes/no> - clean commands after sending
  - /ignoreblue <word> - prevent auto cleaning of the command
  - /unignoreblue <word> - remove prevent auto cleaning of the command
