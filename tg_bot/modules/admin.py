@@ -375,6 +375,8 @@ Admin only:
  - /settitle: Sets a custom title for an admin which is promoted by bot.
  - /setgpic: As a reply to file or photo to set group profile pic!
  - /delgpic: Same as above but to remove group profile pic.
+ 
+ """
 
 
 PIN_HANDLER = CommandHandler("pin", pin, pass_args=True, filters=Filters.group)
