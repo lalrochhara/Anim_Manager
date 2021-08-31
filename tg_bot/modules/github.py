@@ -36,6 +36,27 @@ def github(bot: Bot, update: Update):
 
 
 __help__ = """
+Imagine you find a person in Github.⚫️ But you don't know his info in Github.ℹ️ So you have to go to page by page and gather info about that account.😖 But no more!😃 With this feature you can get all the information about that person using his/her Github username.⭕️ A list got using this command is shown below.⬇️
+
+Name: Senu Gamer Boy
+Username: SenuGamerBoy
+Account ID: 86920820
+Account type: User
+Location: Veyangoda,Sri lanka
+Bio: I am Python Leaner ⭐️ Im BOTs Deevoloper & Web Dvoloper...🔥
+
+
+Followers: 2
+Following: 10
+Hireable: None
+Public Repos: 44
+Public Gists: 0
+Email: None
+Company: SenuInfinity
+Website: 
+Last updated: 2021-08-29T10:54:41Z
+Account created at: 2021-07-04T14:41:06Z
+
  - /git:{GitHub username} Returns info about a GitHub user or organization.
 """
 
