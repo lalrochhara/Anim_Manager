@@ -1,4 +1,4 @@
-#    Copyright (C) 2020-2021 by @SenuGamerBoy
+#    Copyright (C) 2020-2021 by @SadewJ
 #    This programme is a part of Liza TG bot project
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -26,9 +26,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from EzilaXBotV import DRAGONS as SUDO_USERS
-from EzilaXBotV import pbot
-from EzilaXBotV.modules.sql import forceSubscribe_sql as sql
+from tg_bot import DRAGONS as SUDO_USERS
+from tg_bot import pbot
+from tg_bot.modules.sql import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
