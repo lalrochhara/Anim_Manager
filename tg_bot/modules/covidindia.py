@@ -44,6 +44,9 @@ def covindia(bot: Bot, update: Update):
         )
 
 __help__ = """
+ COVID-19 VIRUS:
+
+For indians.🇮🇳 Can get the Covid 19 status of Indian states.💫 Just send the command and status is right inf-front of you.🔘
  
  - /covindia <state>: Get real time COVID-19 stats for the input Indian state
 """
