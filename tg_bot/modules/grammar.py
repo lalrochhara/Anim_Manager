@@ -49,6 +49,8 @@ def translate(bot: Bot, update: Update):
 
 
 __help__ = """
+Think if you typed an assignment or a very long document.📄 And you have to correct it's grammar.💠 Of course you can use platforms like Grammarly.⚪️ But you have to manually correct it.🧑‍💻 You will be so tired of doing it🥵. So you can use this module and correct your grammar in just a second.🌀
+
  - /t: while replying to a message, will reply with a grammar corrected version
 """
 
