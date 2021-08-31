@@ -120,6 +120,9 @@ def table(bot: Bot, update: Update):
 
 
 __help__ = """
+Each command contains different types of random text.🔀 
+Figure out your self!😜
+
  - /runs: reply a random string from an array of replies.
  - /slap: slap a user, or get slapped if not a reply.
  - /shrug : get shrug XD.
