@@ -346,6 +346,7 @@ def kill(bot: Bot, update: Update):
 
 
 __help__ = """
+Ooh. Emojis, it's all fun.🤩 Amazing animations based on emojis.👣 For an example check out click the link given at the bottom of this text.🔗 Still trying to add more and more emoji animations.🔜
 
 - /love 💖
 
