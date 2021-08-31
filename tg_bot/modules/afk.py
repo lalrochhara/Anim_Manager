@@ -82,6 +82,10 @@ def __gdpr__(user_id):
 
 
 __help__ = """
+Using this command you can mark yourself as AFK (❌Away from keyboard⌨️) in the group where I am in.😊
+
+Here is the help for the AFK module:
+
  - /afk <reason>: mark yourself as AFK(away from keyboard).
  - brb <reason>: same as the afk command - but not a command.
 When marked as AFK, any mentions will be replied to with a message to say you're not available!
