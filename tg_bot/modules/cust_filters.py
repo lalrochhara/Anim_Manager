@@ -264,6 +264,8 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
+If you want to add a custom reply to users' message you can use filters.✉️ For example if you give the bot this command as "/filter Hello Hello there", now if a user send a message as "hello" the bot will reply that user as "Hello there". That's an example.🎀 This way you can trigger only one word.🙁 What if you want to add a filter for a whole sentence.🤨 Then you can type this way = (/filter "Hello there" Hello there, What do you want?) Now if a user sends as "Hello there" the bot will reply as "Hello there, What do you want?".😃 The brackets added in the second example are for separating purposes.🤪
+
  - /filters: list all active filters in this chat.
 
 *Admin only:*
