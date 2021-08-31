@@ -91,7 +91,7 @@ __mod_name__ = "CHAT BOT"
 
 __help__ = """
 
-Powered by CoffeeHouse (https://coffeehouse.intellivoid.net/) from @Intellivoid
+Sometimes you wanna go offline and stay that way.😶 But users still message you.💬 So you can use this section and enable Chat Bot which will be replying users automatically.💠
 
  - /addchat : Enables Chatbot mode in the chat.
  - /rmchat  : Disables Chatbot mode in the chat.
