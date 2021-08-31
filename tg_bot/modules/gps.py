@@ -43,6 +43,8 @@ def gps(bot: Bot, update: Update, args: List[str]):
 
 
 __help__ = """
+Using this section you can get the location of any place across the world.🌍 In this module bot uses the google maps platform.🗺 So you can keep sure about it.😌 If it's a trouble for you to search places in google map and wait just use this method.😊 Very easily you can get the location you want.😙
+
 - /gps: <location> Get gps location..
 """
 
