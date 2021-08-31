@@ -26,7 +26,11 @@ def corona(bot: Bot, update: Update):
       message.reply_text(random.choice(SFW_STRINGS))
 
 __help__ = """
+😷Here you can get random quotes type messages.
+Different from message to message.💈 You can use this command to tell someone about the things someone should do to avoid of being a victim of Covid 19.🦠
+
 - /corona  😷.
+
 """
 
 __mod_name__ = "BREAK THE CHAIN"
