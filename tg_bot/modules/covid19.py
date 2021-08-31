@@ -110,6 +110,8 @@ def cov(bot: Bot, update: Update):
 
 
 __help__ = """
+📍This is the command to get the Covid 19 status of the specified location.🦠 There are 2 ways of typing this command.2️⃣ Just type it and you can get the information.ℹ️
+
  - /cov <country> <state> <locality>: Get real time COVID-19 stats for the input location.
  - /cov top <n(integer)>: Get the top n countries with the highest confirmed cases.
 """
