@@ -42,7 +42,7 @@ Should any be missing kindly let us know at [Senu In͏i͏f͏i͏n͏i͏t͏y͏](htt
 ## Anim Manager the telegram Bot Project
 The Advanced Branch (For PRO's)
 
-# Devs & Contributors
+# Devs & Contributors ⚡
 
 #### • Senu Gamer Biy    »»  <a href="https://github.com/SenuGamerBoy" alt="SenuGamerBoy"> <img src="https://img.shields.io/badge/SenuGamerboy-107D8D?logo=github" /></a> (DEV) 
 
