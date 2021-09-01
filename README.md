@@ -7,6 +7,9 @@
   <a href="https://github.com/SenuGamerBoy/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" /> </a>
 </p>
 
+<p align="center"><a href="https://t.me/senuinfinity"><img src="https://telegra.ph/file/4e625c821b19d9fc6bdb9.png" width="400"></a></p>
+<p align="center">
+  
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=SenuGamerBoy/Anim-Manager)
 > ⭐️ Thanks to everyone who starred EzilaX, That is the greatest pleasure we have !
 
