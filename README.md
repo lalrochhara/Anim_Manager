@@ -44,7 +44,7 @@ The Advanced Branch (For PRO's)
 
 # Devs & Contributors ⚡
 
-#### • Senu Gamer Biy    »»  <a href="https://github.com/SenuGamerBoy" alt="SenuGamerBoy"> <img src="https://img.shields.io/badge/SenuGamerboy-107D8D?logo=github" /></a> (DEV) 
+#### • Senu Gamer Boy    »»  <a href="https://github.com/SenuGamerBoy" alt="SenuGamerBoy"> <img src="https://img.shields.io/badge/SenuGamerboy-107D8D?logo=github" /></a> (DEV) 
 
 ## Senu Infinity (advanced 😏)
 
