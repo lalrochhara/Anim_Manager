@@ -8,11 +8,9 @@
 </p>
 
 
+<p><a href="https://heroku.com/deploy?template=https://github.com/SenuGamerBoy/Anim-Manager"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 
-# 🏃‍♂️ Easy Deploy 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SenuGamerBoy/Anim-Manager.git)
-
-# 🔮My Updates Channel [Senu Infinity](https://t.me/senuinfinity)
+## 🔮My Updates Channel [Senu Infinity](https://t.me/senuinfinity)
 
 # ❤️ Support
 <a href="https://t.me/Ezila_Support"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
