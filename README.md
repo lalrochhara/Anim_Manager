@@ -7,16 +7,19 @@
   <a href="https://github.com/SenuGamerBoy/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" /> </a>
 </p>
 
+![GitHub Contributors Image](https://contrib.rocks/image?repo=SenuGamerBoy/Anim-Manager)
+> ⭐️ Thanks to everyone who starred EzilaX, That is the greatest pleasure we have !
 
+# 🏃‍♂️ Easy Deploy 
 <p><a href="https://heroku.com/deploy?template=https://github.com/SenuGamerBoy/Anim-Manager"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 
-## 🔮My Updates Channel [Senu Infinity](https://t.me/senuinfinity)
+# 🔮My Updates Channel [Senu Infinity](https://t.me/senuinfinity)
 
 # ❤️ Support
 <a href="https://t.me/Ezila_Support"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 <a href="https://t.me/Ezila_Updates"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
-## Credits 💖
+# Credits 💖
 
  - Uniborg
  - Telethon
@@ -24,7 +27,7 @@
  - Skylee
  - emilia
 
-## Special Credits
+# Special Credits
 
 - [Senu Gamer Boy](https://github.com/SenuGamerBoy): Dev
 - [Senu 𝐈𝐧𝐢𝐟𝐢𝐧𝐢𝐭𝐲](https://t.me/senuinfinity)
@@ -36,7 +39,7 @@ Should any be missing kindly let us know at [Senu In͏i͏f͏i͏n͏i͏t͏y͏](htt
 ## Anim Manager the telegram Bot Project
 The Advanced Branch (For PRO's)
 
-## Devs & Contributors
+# Devs & Contributors
 
 #### • Senu Gamer Biy    »»  <a href="https://github.com/SenuGamerBoy" alt="SenuGamerBoy"> <img src="https://img.shields.io/badge/SenuGamerboy-107D8D?logo=github" /></a> (DEV) 
 
