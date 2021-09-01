@@ -119,6 +119,8 @@ def totranslate(bot: Bot, update: Update):
 
 
 __help__ = """
+If you have a message with an unknown language you can translate it using this feature.🔄 Get the language codes from 
+
 - /tr (language code) as reply to a long message.
 """
 
@@ -126,6 +128,6 @@ TRANSLATE_HANDLER = DisableAbleCommandHandler("tr", totranslate)
 
 dispatcher.add_handler(TRANSLATE_HANDLER)
 
-__mod_name__ = "TRANSLATOR"
+__mod_name__ = "Translator💫"
 __command_list__ = ["tr"]
 __handlers__ = [TRANSLATE_HANDLER]

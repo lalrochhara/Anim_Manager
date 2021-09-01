@@ -51,7 +51,7 @@ For indians.🇮🇳 Can get the Covid 19 status of Indian states.💫 Just send
  - /covindia <state>: Get real time COVID-19 stats for the input Indian state
 """
 
-__mod_name__ = 'COVID-19 VIRUS'
+__mod_name__ = 'Covid 19🇮🇳'
 
 COV_INDIA_HANDLER = CommandHandler('covindia', covindia)
 

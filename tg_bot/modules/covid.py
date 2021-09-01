@@ -45,7 +45,7 @@ __help__ = """
  - /covid get worldwide corona status
 """
 
-__mod_name__ = 'COVID-19'
+__mod_name__ = 'Covid 19🦠'
 
 COVID_HANDLER = CommandHandler("covid", covid, admin_ok=True)
 dispatcher.add_handler(COVID_HANDLER)

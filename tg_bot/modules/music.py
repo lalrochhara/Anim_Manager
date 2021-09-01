@@ -76,7 +76,7 @@ Imagine you have a YouTube video link.🔗 But you want to download it as an aud
  - /music <Youtube link> : download audio file from youtube link.
 
 """
-__mod_name__ = "MP3 DOWNLOADER" 
+__mod_name__ = "MP3 Download🎵" 
 
 music_handler = CommandHandler('music', music, pass_args=True)
 dispatcher.add_handler(music_handler)

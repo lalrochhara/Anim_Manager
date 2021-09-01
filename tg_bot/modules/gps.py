@@ -48,7 +48,7 @@ Using this section you can get the location of any place across the world.🌍 I
 - /gps: <location> Get gps location..
 """
 
-__mod_name__ = "GPS"
+__mod_name__ = "GPS📌"
 
 GPS_HANDLER = DisableAbleCommandHandler("gps", gps, pass_args=True)
 

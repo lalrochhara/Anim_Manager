@@ -60,7 +60,7 @@ Account created at: 2021-07-04T14:41:06Z
  - /git:{GitHub username} Returns info about a GitHub user or organization.
 """
 
-__mod_name__ = "GITHUB"
+__mod_name__ = "Github💠"
 
 github_handle = DisableAbleCommandHandler("git", github)
 

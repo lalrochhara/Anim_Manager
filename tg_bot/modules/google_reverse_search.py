@@ -187,7 +187,7 @@ Think if you have a image and you want to search similar images.🖼 So you can 
 - /reverse: Does a reverse image search of the media which it was replied to.
 """
 
-__mod_name__ = "IMAGE SEARCH"
+__mod_name__ = "Image Search🖼"
 
 REVERSE_HANDLER = DisableAbleCommandHandler("reverse", reverse, pass_args=True, admin_ok=True)
 

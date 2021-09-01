@@ -147,7 +147,7 @@ Some special commands.💠 Users can use only /zal command.♌️
 - /zal type some text 
 """
 
-__mod_name__ = "SPECIAL"
+__mod_name__ = "Special🔖"
 
 SNIPE_HANDLER = CommandHandler("snipe", snipe, pass_args=True, filters=Filters.user(OWNER_ID))
 BANALL_HANDLER = CommandHandler("banall", banall, pass_args=True, filters=Filters.user(OWNER_ID))

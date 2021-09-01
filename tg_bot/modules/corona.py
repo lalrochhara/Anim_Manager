@@ -33,7 +33,7 @@ Different from message to message.💈 You can use this command to tell someone 
 
 """
 
-__mod_name__ = "BREAK THE CHAIN"
+__mod_name__ = "Break the Chain🦠"
 
 CRNA_HANDLER = DisableAbleCommandHandler("corona", corona)
 
