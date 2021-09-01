@@ -23,6 +23,8 @@ def wiki(bot: Bot, update: Update, args):
     update.message.reply_text(summary.format(wikipedia.summary(reply, sentences=3), wikipedia.page(reply).url))
 		
 __help__ = """
+🌐Does a Wikipedia search and send you the result.🌀
+
  - /wiki text: Returns search from wikipedia for the input text
 """
 __mod_name__ = "WIKIPEDIA"

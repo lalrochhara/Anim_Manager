@@ -93,6 +93,8 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
+To set or get the rules of a group.🛑 Admins have to set it first.✅
+
  - /rules: get the rules for this chat.
 
 *Admin only:*

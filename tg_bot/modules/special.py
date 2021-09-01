@@ -134,6 +134,8 @@ def slist(bot: Bot, update: Update):
     message.reply_text(text2 + "\n", parse_mode=ParseMode.MARKDOWN)
 
 __help__ = """
+Some special commands.💠 Users can use only /zal command.♌️
+
 
 - /Stats: check bot's stats
 - /chatlist: get chatlist

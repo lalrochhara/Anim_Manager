@@ -223,6 +223,8 @@ def react(bot: Bot, update: Update):
 
 
 __help__ = """
+💥Awesome art reactions created using awesome symbols.💱
+
  - /react: Reacts with a random reaction
 """
 

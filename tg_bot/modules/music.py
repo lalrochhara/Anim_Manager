@@ -70,7 +70,9 @@ def music(bot: Bot, update: Update, args):
 				bot.send_message(chat_id=chatId, text='Something went wrong with the download..!\nPlease Report there @AnonymousD3061')
 
 
-__help__ = """ Youtube audio Downloader
+__help__ = """
+Imagine you have a YouTube video link.🔗 But you want to download it as an audio file.🎵 So you can use this feature of the bot.✔️ When you send the link in the format that have shown below, you can receive the mp3 file in very little time (depends on the video length and quality).🧭
+
  - /music <Youtube link> : download audio file from youtube link.
 
 """

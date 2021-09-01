@@ -323,6 +323,30 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
+If you want to lock something in your group for some reason You can use this method.🔐 There are various lock types allowed in this bot (18).❄️
+
+Lock types:
+
+Locks: 
+1. sticker
+2. audio
+3. voice
+4. document
+5. video
+6. contact
+7. photo
+8. gif
+9. url
+10. bots
+11. forward
+12. game
+13. location
+14. messages
+15. media
+16. other
+17. all
+
+
  - /locktypes: a list of possible locktypes
 
 *Admin only:*

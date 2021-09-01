@@ -77,9 +77,13 @@ def gettime(bot: Bot, update: Update):
 
 
 __help__ = """
+🌍Get the time zone, time, date, day and country code of a specific country.⌚️
+
+
  - /time <query> : Gives information about a timezone.
 
 Available queries : Country Code/Country Name/Timezone Name
+
 """
 
 TIME_HANDLER = DisableAbleCommandHandler("time", gettime)

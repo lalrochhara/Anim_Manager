@@ -19,6 +19,8 @@ def ud(bot: Bot, update: Update):
 
 
 __help__ = """
+The name gives you the idea.💡 This is a dictionary.📓 You can get the meaning of a word with definitions using this feature.📄
+
  - /ud <word>: Type the word or expression you want to search use.
  - /urban <word>: Same as /ud
 """

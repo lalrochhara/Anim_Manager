@@ -216,6 +216,8 @@ def rss_set(bot, job):
 
 
 __help__ = """
+🕳Enter your RSS feed link to enable RSS feed in the bot.📡(e.g.: feed://thenextweb.com/feed/).
+
  - /addrss <link>: add an RSS link to the subscriptions.
  - /removerss <link>: removes the RSS link from the subscriptions.
  - /rss <link>: shows the link's data and the last entry, for testing purposes.

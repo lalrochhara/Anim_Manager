@@ -61,6 +61,8 @@ def weather(bot, update, args):
 
 
 __help__ = """
+⛅️If you want to know the weather of a specific place before you go there, you can use this feature to do it very easily.⛈
+
  - /weather <city>: get weather info in a particular place
 """
 

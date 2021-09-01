@@ -34,6 +34,8 @@ def police(bot: Bot, update: Update):
 
 
 __help__ = """
+Cool animation to show your friends police is coming.🚔
+
 - /police : 🚔
 """
 

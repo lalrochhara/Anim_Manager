@@ -138,6 +138,9 @@ def __user_settings__(user_id):
 
 
 __help__ = """
+🤴Report your message to admins using this command.🎤(Admins have to enable this first 🔦)
+
+
  - /report <reason>: reply to a message to report it to admins.
  - @admin: reply to a message to report it to admins.
 NOTE: Neither of these will get triggered if used by admins.
@@ -146,6 +149,7 @@ NOTE: Neither of these will get triggered if used by admins.
  - /reports <on/off>: change report setting, or view current status.
    - If done in pm, toggles your status.
    - If in chat, toggles that chat's status.
+   
 """
 
 SETTING_HANDLER = CommandHandler("reports", report_setting, pass_args=True)

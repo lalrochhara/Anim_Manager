@@ -190,6 +190,8 @@ def temp_mute(bot: Bot, update: Update, args: List[str]) -> str:
 
 
 __help__ = """
+If a user sends so many messages and overload your chat with messages,🔆 You can use this commands and mute that user permanently or temporarily.🔇 If you mute the user permanently, you can unmute anytime using /unmute command.🔈 Or if the user is temporarily, then also you can use /unmute command to unmute the user before it's the time you've given.🕞
+
 *Admin only:*
  - /mute <userhandle>: silences a user. Can also be used as a reply, muting the replied to user.
  - /tmute <userhandle> x(m/h/d): mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.

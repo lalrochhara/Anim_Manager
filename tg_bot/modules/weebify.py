@@ -28,6 +28,8 @@ def weebify(bot: Bot, update: Update, args: List[str]):
 
 
 __help__ = """
+Turns your text in to a cool font.🔰
+
  - /weebify <text>: returns a weebified text
  """
 

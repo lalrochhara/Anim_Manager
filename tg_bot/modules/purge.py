@@ -98,6 +98,8 @@ def del_message(bot: Bot, update: Update) -> str:
 
 
 __help__ = """
+⚡️To delete lot of messages very fast in the group with different commands.🗑
+
 *Admin only:*
  - /del: deletes the message you replied to
  - /purge: deletes all messages between this and the replied to message.

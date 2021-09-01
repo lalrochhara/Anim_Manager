@@ -94,6 +94,8 @@ def pingall(bot: Bot, update: Update):
 
 
 __help__ = """
+The command to test bot's speed & uptime.⏳
+
  - /ping - get ping time of bot to telegram server
  - /pingall - get all listed ping time
 """
