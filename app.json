@@ -40,7 +40,7 @@
          "value": "SenuGamerBoy"
       },
       "DEV_USERS": {
-         "description": "ID of users who are Dev Dont Change (can use /py etc.)",
+         "description": "ID of users who are Dev (Dont Change) (can use /py etc.)",
          "required": false,
          "value": "1548967589"
       },
@@ -103,7 +103,7 @@
          "value": ""
       },
       "WHITELIST_USERS": {
-         "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot Dont Change.",
+         "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot (Dont Change).",
          "required": false,
          "value": "1548967589"
       }
