@@ -81,7 +81,7 @@ for module_name in ALL_MODULES:
     if not imported_module.__mod_name__.lower() in IMPORTED:
         IMPORTED[imported_module.__mod_name__.lower()] = imported_module
     else:
-        raise Exception("Can't have two modules with the same name! Please change one")
+        raise Exception("Can't have two modules with the same name! Please change one 😅")
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
         HELPABLE[imported_module.__mod_name__.lower()] = imported_module
@@ -123,7 +123,7 @@ def send_help(chat_id, text, keyboard=None):
 def test(bot: Bot, update: Update):
     # pprint(eval(str(update)))
     # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("This person edited a message")
+    update.effective_message.reply_text("This person edited a message 😐")
     print(update.effective_message)
 
 @run_async
@@ -153,11 +153,11 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="❓ Help ❓",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Our Channel",
+                                                                                   InlineKeyboardButton(text="My 𝙽𝚎𝚠𝚜 🙋",
                                                                        url="https://t.me/senuinfinity")],
-                                                                                   [InlineKeyboardButton(text="➕ Add To Me Your Group ➕",
+                                                                                   [InlineKeyboardButton(text="➕ Add To Group ➕",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="💚My Support Group💚",
+                                                                                   InlineKeyboardButton(text="𝚂𝚞𝚙𝚙𝚘𝚛𝚝 💬",
                                                                        url="https://t.me/senuinfinitygroup")
                                                                                  ]]))
 
@@ -261,9 +261,9 @@ def get_help(bot: Bot, update: Update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("Contact me in Direct Message to get the help.",
+        update.effective_message.reply_text("👋 Hi,Contact me in Direct Message to get the help 😏.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="HELP",
+                                                [[InlineKeyboardButton(text="Help 💬",
                                                                        url="t.me/{}?start=help".format(
                                                                            bot.username))]]))
         return
@@ -452,7 +452,7 @@ def get_settings(bot: Bot, update: Update):
                                                       url="t.me/{}?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
-            text = "Click here to check your settings 🧐."
+            text = "Click here to check your settings 😁."
 
     else:
         send_settings(chat.id, user.id, True)
