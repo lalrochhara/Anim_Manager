@@ -26,13 +26,14 @@ from Anim_Manager.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-**𝐇𝐞𝐥𝐥𝐨 {}, 𝐌𝐲 𝐍𝐚𝐦𝐞 𝐢𝐬 {}!** 
+**Hello {}, My Name is {}!** 
 
-𝐈 𝐚𝐦 𝐚𝐧 𝐚𝐝𝐯𝐚𝐧𝐜𝐞𝐝 𝐠𝐫𝐨𝐮𝐩 𝐦𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐛𝐨𝐭 𝐛𝐲 @senuinfinity.💫
-𝐈 𝐜𝐚𝐧 𝐦𝐚𝐧𝐚𝐠𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐯𝐞𝐫𝐲 𝐞𝐚𝐬𝐢𝐥𝐲 & 𝐬𝐚𝐟𝐞𝐥𝐲. 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐤𝐞𝐞𝐩 𝐭𝐫𝐮𝐬𝐭 𝐨𝐧 𝐦𝐞 𝐰𝐢𝐭𝐡𝐨𝐮𝐭 𝐚𝐧𝐲 𝐝𝐨𝐮𝐛𝐭. 𝐈 𝐚𝐦 𝐥𝐢𝐤𝐞 𝐚 𝐩𝐮𝐛𝐥𝐢𝐜 𝐮𝐬𝐞𝐫𝐛𝐨𝐭.🔥
-𝐓𝐫𝐲 𝐮𝐬𝐢𝐧𝐠 𝐦𝐞!⚡️
+I am an advanced group management bot by @senuinfinity.💫
+I can manage your group very easily & safely. You can keep trust on me without any doubt. I am like a public userbot.🔥
 
-/help 𝐔𝐬𝐞 𝐅𝐨𝐫 𝐆𝐞𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝
+Try using me!⚡️
+
+/help Use For Get Command
 
 """
 
@@ -40,24 +41,24 @@ HELP_STRINGS = """
 
 👋𝐇𝐞𝐥𝐥𝐨! 𝐦𝐲 𝐧𝐚𝐦𝐞 *{}*.
 
-𝐓𝐡𝐞 𝐛𝐞𝐬𝐭 𝐠𝐫𝐨𝐮𝐩 𝐦𝐚𝐧𝐚𝐠𝐞𝐫 𝐛𝐨𝐭 𝐭𝐨 𝐦𝐚𝐧𝐚𝐠𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩𝐬.⚙️
-𝐓𝐡𝐢𝐬 𝐢𝐬 𝐭𝐡𝐞 𝐡𝐞𝐥𝐩 𝐬𝐞𝐜𝐭𝐢𝐨𝐧 𝐰𝐡𝐞𝐫𝐞 𝐲𝐨𝐮 𝐜𝐚𝐧 𝐥𝐞𝐚𝐫𝐧 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞. "𝐲𝐚𝐲!🥳"
+The best group manager bot to manage your groups.⚙️
+This is the help section where you can learn to use me. "yay!🥳"
 
-*𝐌𝐚𝐢𝐧* 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐫𝐞 𝐦𝐞𝐧𝐭𝐢𝐨𝐧𝐞𝐝 𝐛𝐞𝐥𝐨𝐰.
+Main commands are mentioned below.
 👇👇👇👇👇👇👇👇👇👇👇👇
 
-𝐌𝐚𝐢𝐧 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞:
- 💠 - /start: 𝐬𝐭𝐚𝐫𝐭 𝐭𝐡𝐞 𝐛𝐨𝐭
- 💠 - /help: 𝐏𝐌'𝐬 𝐲𝐨𝐮 𝐭𝐡𝐢𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞.
- 💠 - /help <𝐦𝐨𝐝𝐮𝐥𝐞 𝐧𝐚𝐦𝐞>: 𝐏𝐌'𝐬 𝐲𝐨𝐮 𝐢𝐧𝐟𝐨 𝐚𝐛𝐨𝐮𝐭 𝐭𝐡𝐚𝐭 𝐦𝐨𝐝𝐮𝐥𝐞.
+Main commands available:
+ 💠 - /start: start the bot
+ 💠 - /help: PM's you this message.
+ 💠 - /help <module name>: PM's you info about that module.
  💠 - /settings:
-    🔹- 𝐢𝐧 𝐏𝐌: 𝐰𝐢𝐥𝐥 𝐬𝐞𝐧𝐝 𝐲𝐨𝐮 𝐲𝐨𝐮𝐫 𝐬𝐞𝐭𝐭𝐢𝐧𝐠𝐬 𝐟𝐨𝐫 𝐚𝐥𝐥 𝐬𝐮𝐩𝐩𝐨𝐫𝐭𝐞𝐝 𝐦𝐨𝐝𝐮𝐥𝐞𝐬.
-    🔹- 𝐢𝐧 𝐚 𝐠𝐫𝐨𝐮𝐩: 𝐰𝐢𝐥𝐥 𝐫𝐞𝐝𝐢𝐫𝐞𝐜𝐭 𝐲𝐨𝐮 𝐭𝐨 𝐩𝐦, 𝐰𝐢𝐭𝐡 𝐚𝐥𝐥 𝐭𝐡𝐚𝐭 𝐜𝐡𝐚𝐭'𝐬 𝐬𝐞𝐭𝐭𝐢𝐧𝐠𝐬.
+    🔹- in PM: will send you your settings for all supported modules.
+    🔹- in a group: will redirect you to pm, with all that chat's settings.
 
 
-𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐜𝐚𝐧 𝐞𝐢𝐭𝐡𝐞𝐫 𝐛𝐞 𝐮𝐬𝐞𝐝 𝐰𝐢𝐭𝐡 / 𝐨𝐫 !.
+All commands can either be used with / or !.
 
-𝐀𝐧𝐝 𝐭𝐡𝐞 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠:
+And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 TECHNO_IMG = "https://telegra.ph/file/6d31bc8d4cb688a44726d.jpg"
