@@ -61,7 +61,7 @@ All commands can either be used with / or !.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/6d31bc8d4cb688a44726d.jpg"
+TECHNO_IMG = "https://telegra.ph/file/f782f63a91338062ba6d8.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
