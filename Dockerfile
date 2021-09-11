@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/Natsuki
-RUN git clone -b shiken https://github.com/Sadew451/Natsuki /root/Natsuki
-WORKDIR /root/Natsuki
+# Copy Python Requirements to /root/Anim_Manager
+RUN git clone -b shiken https://github.com/Sadew451/Anim_Manager /root/Anim_Manager
+WORKDIR /root/Anim_Manager
 
-#Copy config file to /root/Natsuki/Natsuki
-COPY ./Natsuki/sample_config.py ./Natsuki/config.py* /root/Natsuki/Natsuki/
+#Copy config file to /root/Natsuki/Anim_Manager
+COPY ./Anim_Manager/sample_config.py ./Anim_Manager/config.py* /root/Anim_Manager/Anim_Manager/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","Natsuki"]
+CMD ["python3","-m","Anim_Manager"]
