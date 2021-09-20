@@ -33,3 +33,4 @@ pySmartDL
 asyncio
 html2text
 pybase64
+hachoir
