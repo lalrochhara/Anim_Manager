@@ -32,3 +32,4 @@ pytz
 pySmartDL 
 asyncio
 base64
+html2text
