@@ -27,12 +27,13 @@ def box(bot: Bot, update: Update, args: List[str]):
  
 __help__ = """
  - /box <text>: returns a box text
+ - /mts <text>: returns a Math Bold Script
  """
  
 BOX_HANDLER = DisableAbleCommandHandler("box", box, pass_args=True)
  
 dispatcher.add_handler(BOX_HANDLER)
  
-__mod_name__ = "BOX TEXT"
+__mod_name__ = "Cool Text 🆒"
 __command_list__ = ["box"]
 __handlers__ = [BOX_HANDLER]
