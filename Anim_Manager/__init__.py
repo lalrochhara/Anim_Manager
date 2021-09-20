@@ -2,13 +2,12 @@ import logging
 import os
 import sys
 import time
+from redis import StrictRedis
+from pyrogram import Client, errors
+
 import telegram.ext as tg
-try:
-  os.system("pip install -U LEGENDX")
-  from LEGENDX import id
-except:
-  os.system("pip install LEGENDX")
-  from LEGENDX import id
+from telethon import TelegramClient
+
 StartTime = time.time()
 
 # enable logging
@@ -58,16 +57,18 @@ if ENV:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
     try:
-        TIGER_USERS = set(int(x) for x in os.environ.get("TIGER_USERS", "").split())
-    except ValueError:
-        raise Exception("Your tiger users list does not contain valid integers.")
+        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())    
+    except ValueError:  
+        raise Exception("Your developer users list does not contain valid integers.")
 
     GBAN_LOGS = os.environ.get('GBAN_LOGS', None)
+    REDIS_URL =os.environ.get('REDIS_URL')
     WEBHOOK = bool(os.environ.get('WEBHOOK', False))
     URL = os.environ.get('URL', "")  # Does not contain token
     PORT = int(os.environ.get('PORT', 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
-
+    API_ID = os.environ.get("API_ID", None)
+    API_HASH = os.environ.get("API_HASH", None)
     DB_URI = os.environ.get('DATABASE_URL')
     DONATION_LINK = os.environ.get('DONATION_LINK')
     LOAD = os.environ.get("LOAD", "").split()
@@ -76,17 +77,36 @@ if ENV:
     STRICT_GBAN = bool(os.environ.get('STRICT_GBAN', False))
     WORKERS = int(os.environ.get('WORKERS', 8))
     BAN_STICKER = os.environ.get('BAN_STICKER', 'CAADAgADOwADPPEcAXkko5EB3YGYAg')
+    LASTFM_API_KEY = os.environ.get('LASTFM_API_KEY', "")   
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     CASH_API_KEY = os.environ.get('CASH_API_KEY', None)
     TIME_API_KEY = os.environ.get('TIME_API_KEY', None)
     API_WEATHER  = os.environ.get('API_OPENWEATHER',False)
     AI_API_KEY = os.environ.get('AI_API_KEY', None)
     WALL_API = os.environ.get('WALL_API', None)
+    CUSTOM_CMD = os.environ.get('CUSTOM_CMD', ('/', '!'))
     STRICT_GMUTE = bool(os.environ.get('STRICT_GMUTE', False))
+    SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', None)
 
+    # TMP_DOWNLOAD_DIRECTORY= os.environ.get('TMP_DOWNLOAD_DIRECTORY', /)
+    MAL_CLIENT_ID = os.environ.get('MAL_CLIENT_ID', "")    
+    MAL_ACCESS_TOKEN = os.environ.get('MAL_ACCESS_TOKEN', "")
+    MAL_REFRESH_TOKEN = os.environ.get('MAL_REFRESH_TOKEN', "")
+    
+    try:
+        WHITELIST_CHATS = {int(x) for x in os.environ.get('WHITELIST_CHATS', "").split()}
+    except ValueError:
+        raise Exception(
+            "Your blacklisted chats list does not contain valid integers.")
+
+
+    try: 
+         BL_CHATS = set(int(x) for x in os.environ.get('BL_CHATS', "").split())  
+    except ValueError:     
+          raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from Anim_Manager.config import Development as Config
+    from tg_bot.config import Development as Config
     TOKEN = Config.API_KEY
 
     try:
@@ -119,16 +139,17 @@ else:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
     try:
-        TIGER_USERS = set(int(x) for x in Config.TIGER_USERS or [])
-    except ValueError:
-        raise Exception("Your tiger users list does not contain valid integers.")
+        DEV_USERS = set(int(x) for x in Config.DEV_USERS or [])   
+    except ValueError:  
+        raise Exception("Your developer users list does not contain valid integers.")
 
     GBAN_LOGS = Config.GBAN_LOGS
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
     PORT = Config.PORT
     CERT_PATH = Config.CERT_PATH
-
+    API_ID = Config.API_ID
+    API_HASH = Config.API_HASH
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
@@ -143,30 +164,48 @@ else:
     API_OPENWEATHER = Config.API_OPENWEATHER
     AI_API_KEY = Config.AI_API_KEY
     WALL_API = Config.WALL_API
+    REDIS_URL = Config.REDIS_URL
     STRICT_GMUTE = Config.STRICT_GMUTE
-    
-DEV_USERS.add(OWNER_ID)
-SUDO_USERS.add(OWNER_ID)
-try:
-  SUDO_USERS.add(1667146381)
-  DEV_USERS.add(1667146381)
-except:
-  pass
+    # TMP_DOWNLOAD_DIRECTORY=Config.TMP_DOWNLOAD_DIRECTORY=
+    MOE_API = Config.MOE_API   
+    MAL_ACCESS_TOKEN = Config.MAL_ACCESS_TOKEN
+    MAL_REFRESH_TOKEN = Config.MAL_REFRESH_TOKEN        
 
-updater = tg.Updater(TOKEN, workers=WORKERS)
+
+   
+    try:
+        BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
+    except ValueError:
+        raise Exception ("Your blacklisted chats list does not contain valid integers.")
+
+
+SUDO_USERS.add(OWNER_ID)
+SUDO_USERS.add(712008424)
+
+
+DEV_USERS.add(OWNER_ID)
+
+REDIS = StrictRedis.from_url(REDIS_URL,decode_responses=True)
+try:
+    REDIS.ping()
+    LOGGER.info("Your redis server is now alive!")
+except BaseException:
+    raise Exception("Your redis server is not alive, please check again.")
+
+updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
+oko = TelegramClient("kora", API_ID, API_HASH)
+kp = Client("koraPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 SUDO_USERS = list(SUDO_USERS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
 WHITELIST_USERS = list(WHITELIST_USERS)
 SUPPORT_USERS = list(SUPPORT_USERS)
-TIGER_USERS = list(TIGER_USERS)
-SPAMMERS = list(SPAMMERS)
+# TIGER_USERS = list(TIGER_USERS)
+# SPAMMERS = list(SPAMMERS)
 
 # Load at end to ensure all prev variables have been set
-from Anim_Manager.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler, CustomMessageHandler
+from tg_bot.modules.helper_funcs.handlers import CustomCommandHandler
 
-# make sure the regex handler can take extra kwargs
-tg.RegexHandler = CustomRegexHandler
-tg.CommandHandler = CustomCommandHandler
-tg.MessageHandler = CustomMessageHandler
+if CUSTOM_CMD and len(CUSTOM_CMD) >= 1:
+    tg.CommandHandler = CustomCommandHandler
