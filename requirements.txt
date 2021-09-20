@@ -26,4 +26,9 @@ wikipedia
 pyowm
 tabulate
 parsel
-bing_image_downloader
+youtube_dl
+pathlib
+pytz
+pySmartDL 
+asyncio
+base64
