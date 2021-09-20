@@ -33,4 +33,4 @@ dispatcher.add_handler(MTS_HANDLER)
  
 __mod_name__ = "MathBoldScript"
 __command_list__ = ["mts"]
-__handlers__ = [BOX_HANDLER]
+__handlers__ = [MTS_HANDLER]
