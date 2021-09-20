@@ -31,7 +31,6 @@ telethon==1.16.4
 mtranslate
 fontTools
 nekos.py
-redis
 pathlib
 pySmartDL 
 validators
