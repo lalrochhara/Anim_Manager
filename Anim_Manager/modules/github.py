@@ -14,21 +14,21 @@ def github(bot: Bot, update: Update):
     usr = get(f'https://api.github.com/users/{text}').json()
     if usr.get('login'):
         reply_text = f"""*Name:* `{usr['name']}`
-*Username:* `{usr['login']}`
-*Account ID:* `{usr['id']}`
-*Account type:* `{usr['type']}`
-*Location:* `{usr['location']}`
-*Bio:* `{usr['bio']}`
-*Followers:* `{usr['followers']}`
-*Following:* `{usr['following']}`
-*Hireable:* `{usr['hireable']}`
-*Public Repos:* `{usr['public_repos']}`
-*Public Gists:* `{usr['public_gists']}`
-*Email:* `{usr['email']}`
-*Company:* `{usr['company']}`
-*Website:* `{usr['blog']}`
-*Last updated:* `{usr['updated_at']}`
-*Account created at:* `{usr['created_at']}`
+*👨‍💼Username:* `{usr['login']}`
+*🔖Account ID:* `{usr['id']}`
+*📝Account type:* `{usr['type']}`
+*📍Location:* `{usr['location']}`
+*✍️Bio:* `{usr['bio']}`
+*➡️Followers:* `{usr['followers']}`
+*⬅️Following:* `{usr['following']}`
+*🌚Hireable:* `{usr['hireable']}`
+*⛵️Public Repos:* `{usr['public_repos']}`
+*🚁Public Gists:* `{usr['public_gists']}`
+*📨Email:* `{usr['email']}`
+*🏢Company:* `{usr['company']}`
+*🌍Website:* `{usr['blog']}`
+*♻️Last updated:* `{usr['updated_at']}`
+*📒Account created at:* `{usr['created_at']}`
 """
     else:
         reply_text = "User not found. Make sure you entered valid username!"
@@ -37,25 +37,6 @@ def github(bot: Bot, update: Update):
 
 __help__ = """
 Imagine you find a person in Github.⚫️ But you don't know his info in Github.ℹ️ So you have to go to page by page and gather info about that account.😖 But no more!😃 With this feature you can get all the information about that person using his/her Github username.⭕️ A list got using this command is shown below.⬇️
-
-Name: Senu Gamer Boy
-Username: SenuGamerBoy
-Account ID: 86920820
-Account type: User
-Location: Veyangoda,Sri lanka
-Bio: I am Python Leaner ⭐️ Im BOTs Deevoloper & Web Dvoloper...🔥
-
-
-Followers: 2
-Following: 10
-Hireable: None
-Public Repos: 44
-Public Gists: 0
-Email: None
-Company: SenuInfinity
-Website: 
-Last updated: 2021-08-29T10:54:41Z
-Account created at: 2021-07-04T14:41:06Z
 
  - /git:{GitHub username} Returns info about a GitHub user or organization.
 """
