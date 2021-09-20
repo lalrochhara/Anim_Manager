@@ -86,7 +86,7 @@ if ENV:
 
 
 else:
-    from tg_bot.config import Development as Config
+    from Anim_Manager.config import Development as Config
     TOKEN = Config.API_KEY
 
     try:
@@ -164,7 +164,7 @@ TIGER_USERS = list(TIGER_USERS)
 SPAMMERS = list(SPAMMERS)
 
 # Load at end to ensure all prev variables have been set
-from tg_bot.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler, CustomMessageHandler
+from Anim_Manager.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler, CustomMessageHandler
 
 # make sure the regex handler can take extra kwargs
 tg.RegexHandler = CustomRegexHandler
