@@ -55,7 +55,6 @@ tswift
 youtube_search
 fontTools
 motor
-borg
 tbot
 pygithub
 search_engine_parser
