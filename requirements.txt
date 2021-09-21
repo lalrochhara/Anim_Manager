@@ -62,3 +62,4 @@ NumPy
 opencv-python-headless
 envparse
 loguru
+telethn
