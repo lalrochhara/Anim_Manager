@@ -189,6 +189,7 @@ Note: Only creator of the group can setup me and i will not allow force subscrib
 👉 /ForceSubscribe {channel username} - To turn on and setup the channel.
 👉 /ForceSubscribe clear - To unmute all members who muted by me.
 Note: /FSub is an alias of /ForceSubscribe
-@Anim_Manager 
+
+@AnimX_Robot
 """
 __mod_name__ = "📢 Force Subscribe 💭"
