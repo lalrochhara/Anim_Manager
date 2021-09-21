@@ -55,6 +55,10 @@ tswift
 youtube_search
 fontTools
 motor
-tbot
 pygithub
 search_engine_parser
+glitch_this
+NumPy
+opencv-python-headless
+envparse
+loguru
