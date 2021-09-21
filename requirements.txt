@@ -46,3 +46,4 @@ wget
 fake-useragent
 asyncio
 pyrogram
+pbot
